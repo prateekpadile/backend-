@@ -4,7 +4,9 @@
   "description": "a backend ",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "dev": "nodemon -r dotenv/config  src/index.js"
+  },
   "keywords": [
     "javascript",
     "backend"
@@ -12,7 +14,6 @@
   "author": "Prateek Padile",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^3.1.10",
-    "prettier": "^3.6.2"
+    "nodemon": "^3.1.10"
   }
 }
