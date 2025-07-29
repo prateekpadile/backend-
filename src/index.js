@@ -9,8 +9,6 @@ dotenv.config({
   path: './.env'
 });
 
-app.use(express.json()); // 👈 required to parse JSON
-app.use("/api/v1/user", userRouter); // 👈 mount route
 
 connectDB()
   .then(() => {
