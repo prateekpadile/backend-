@@ -2,8 +2,9 @@ import dotenv from "dotenv";
 import express from "express";
 import connectDB from "./db/index.js";
 import userRouter from "./routes/user.routes.js"; // 👈 import routes
+import {app} from "./app.js";
 
-const app = express();
+
 
 dotenv.config({
   path: './.env'
